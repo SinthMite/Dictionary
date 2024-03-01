@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <header>
+            <div id="headerLogoDiv"><a href="index.html" id="headerLogo"></a></div>
+            <div id="DropSwitch"><form id="formFont">
+                <label for="font"></label>
+                <select name="font" id="font">
+                    <option value="Serif">Serif</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Georgia">Georgia</option>
+                </select>
+            </form>
+            <form id="FormSwitch">
+                <input type="checkbox" name="swtich" id="swtich">
+                <label for="swtich" id="labelForSwitch"></label>
+            </form>
+        </div>
+        </header>
+        <section id="searchSection">
+            <form>
+                <input type="search" name="search" id="search">
+                <input type="submit" value="submit">
+            </form>
+        </section>
+        <section id="wordSection">
+            <div id="wordDiv">
+                <h1 id="word"></h1>
+                <p id="wordPhonetics"></p>
+            </div>
+            <audio controls id="audioDiv"></audio>
+        </section>
+        <section id="SectionSpeechType">
+            <p id="SpeechType"></p>
+        </section>
+        <section>
+            <p id="meaningOverlay">Meaning</p>
+            <ul>
+                <li><p id="definition"></p></li>
+                <li><p id="example"></p></li>
+            </ul>
+            <div>
+                <p id="synonymsOverlay">synonyms</p>
+                <p id="synonyms"></p>
+            </div>
+        </section>
+        <section id="SectionSpeechTypeTwo">
+            <p id="SpeechTypeTwo"></p>
+        </section>
+    </main>
+</body>
+</html>
